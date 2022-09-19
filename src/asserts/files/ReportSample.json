@@ -1,0 +1,776 @@
+[
+  {
+    "Status": true,
+    "DisplayName": "Summary",
+    "ProjectName": " UiPath-Test24Mar-ID944",
+    "Tool": "UiPath",
+    "DevName": "Raman",
+    "Project Phase": "Testing",
+    "ExcelOutputReport": "R:\\Mindfields-Inhouse\\FlaskAPI\\CRT-Desktop-App\\CRT-FrontendUpdates\\COT-UiPath-16thMarch2022\\Output-UI\\ProjectOutput-UiPath-Test24Mar-ID944.xlsx",
+    "OverallScores": [8.43, 0, 10, 8.15, 7.5, 10],
+    "OverallSeverity": [6, 1, 0, 21, 42],
+    "ReadabilitySeverity": ["5", "1", "0", "14", "2"],
+    "ConfigurabilitySeverity": ["0", "0", "0", "0", "16"],
+    "PerformanceSeverity": ["0", "0", "0", "4", "4"],
+    "ReliabilitySeverity": ["1", "0", "0", "1", "10"],
+    "SecuritySeverity": ["0", "0", "0", "2", "10"],
+    "InteractionFlow": {
+      "2.xaml": ["NoFilesInvoked"],
+      "Process.xaml": ["ReadEmail.xaml"]
+    },
+    "ObservationMessages": [
+      "1 Argument (50.0%) is not used in the code",
+      "3 Activities (60.0%) are not following the defined standards for naming convention",
+      "Not all Activities are covered under Try-Catch block and thus all un-known exceptions are not handled"
+    ],
+    "ObservationSeverity": ["High", "High", "High"],
+    "ApplicationList": { "Summary": [] },
+    "LicenseExpiry": "6",
+    "fileInteractionDataSummary": [["Process", "ReadEmail"]]
+  },
+  {
+    "DisplayName": "2.xaml",
+    "OverallScores": ["8.38", "0", "10.0", "7.64", "10.0", "10.0"],
+    "ObservationMessages": [
+      "2 Variables (100.0%) are not following the defined standards for naming convention.",
+      "2 Argument (50.0%) are not following the defined standards for naming convention",
+      "1 Activity (10.0%) is not following the defined standards for naming convention",
+      "Required Comment or Annotation is not provided for 3 container activities 100.0%"
+    ],
+    "ObservationSeverity": ["High", "High", "Medium", "High"],
+    "WorkflowAppData": [],
+    "DetailedDashboard": [
+      {
+        "RuleName": "Is naming convention followed for Variables?",
+        "RuleCategory": "READABILITY",
+        "Score": "0.0",
+        "Severity": "High",
+        "ObservationMessages": "2 Variables (100.0%) are not following the defined standards for naming convention.",
+        "Suggestion": "It is suggested to use either upper or lower camel casing to define Variables. For example, IsDataAvailable, of isDataAvailable. Please evaluate all non-compliant cases and update them accordingly. Additionally, you can also view the Variables raw data to conduct qualitative check in terms of meaningfulness.",
+        "DropdownHeader": ["Varname", "VarDatatype", "VarScope"],
+        "DropdownData":[{"Varname":["intRowIndex", "drTempRow"]}, 
+                        {"VarDatatype": ["Int32", "DataRow"]},
+                        {"VarScope": ["Sequence_10", "Sequence_9"]}]
+      },
+      {
+        "RuleName": "Is naming convention followed for Arguments?",
+        "RuleCategory": "READABILITY",
+        "Score": "5.0",
+        "Severity": "High",
+        "ObservationMessages": "2 Argument (50.0%) are not following the defined standards for naming convention",
+        "Suggestion": "It is suggested to define the argument names with a prefix of in_ for input, out_ for output and io_ for input-output type followed by either upper of lower camel casing.  Please evaluate all non-compliant cases and update them accordingly. Additionally, you can also view the Arguments raw data to conduct qualitative check in terms of meaningfulness.",
+        "DropdownHeader": ["ArgName", "ArgDatatype", "ArgScope"],
+        "DropdownData":[{"ArgName":["in_dtJournalSplitDT", "out_dtJournalDT"]}, 
+                        {"ArgDatatype": ["DataTable", "DataTable"]},
+                        {"ArgScope": ["InArgument", "InOutArgument"]}]
+      },
+      {
+        "RuleName": "Are all writeline activities removed from the Workflow?",
+        "RuleCategory": "READABILITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "No Writeline Activity is defined.",
+        "Suggestion": "Write line activities are used primarily for debugging purpose and thus it is suggested to remove them from the workflow.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are all message box activities removed from the Workflow?",
+        "RuleCategory": "READABILITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "No MessageBox Activity is defined.",
+        "Suggestion": "Typically, all message box activities are used primarily for debugging purpose and thus it is suggested to remove them from the workflow. If needed, use Input Dialog activity.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are all Variables used in the code?",
+        "RuleCategory": "READABILITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "All variables are used and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to define only those variables which get used inside the code. All unused variables should be removed from the code. Please remove all unused variables either manually or by using remove unused variable functionality of Ui Path.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are all input Arguments used in the code?",
+        "RuleCategory": "READABILITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "All Arguments are used.",
+        "Suggestion": "It is suggested to use all input arguments inside the code. All unused arguments should be removed from the code. Please remove all unused arguments.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is naming convention followed for the Activities?",
+        "RuleCategory": "READABILITY",
+        "Score": "9.0",
+        "Severity": "Medium",
+        "ObservationMessages": "1 Activity (10.0%) is not following the defined standards for naming convention",
+        "Suggestion": "Ideally each and every activity should be uniquely named as display name and should not necessarily be same as that of the Activity Name. Please evaluate all non-compliant cases and update them accordingly.",
+        "DropdownHeader": ["ActivityName", "DisplayName", "ActivityPath"],
+        "DropdownData":[{"ActivityName":["foreachrow"]}, 
+                        {"DisplayName": ["ForEachRow"]},
+                        {"ActivityPath": ["Sequence_10|ForEachRow_2"]}]
+      },
+      {
+        "RuleName": "Is Commenting done adequately for all activities?",
+        "RuleCategory": "READABILITY",
+        "Score": "0.0",
+        "Severity": "High",
+        "ObservationMessages": "Required Comment or Annotation is not provided for 3 container activities 100.0%",
+        "Suggestion": "It is suggested to provide adequate comments at least for each container activity. Please provide comments against each non-compliant cases.",
+        "DropdownHeader": ["DisplayName", "ActivityName", "ActivityPath"],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are all unused activities removed from the Workflow?",
+        "RuleCategory": "READABILITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "No Activities are commented out.",
+        "Suggestion": "It is suggested to remove all comment out activities as they will not be executed and might be there for debugging purpose. Please remove all such cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is the code componentized enough to maintain?",
+        "RuleCategory": "READABILITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "Optimal number of Activities 10 used in single workflow",
+        "Suggestion": "It is suggested to use not more than 100 activities inside any workflow. Anything beyond this is the indication of poor componentization. Please re-evaluate the design from componentization perspective.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is nested IF logic avoided in the Workflow?",
+        "RuleCategory": "READABILITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "No Nested IF Statement is defined.",
+        "Suggestion": "It is suggested to avoid more that one If activities inside any If activity. This creates code complex and unreadable. Please simplify the code by eliminating nested if scenarios.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is TimeOut property parameterized?",
+        "RuleCategory": "CONFIGURABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to fill all Timeout properties with configurable parameters to calibrate the BOT in real environment without making any changes in the code. Even if it is null, the default value is applicable and thus it is always suggested to provide configurable values. Please update all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are files and folders path parameterized?",
+        "RuleCategory": "CONFIGURABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to not hard code any files and folders path inside the code. All such cases need to be referring configurable parameters. Please update all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is DelayBefore and DelayAfter properties parameterized?",
+        "RuleCategory": "CONFIGURABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to fill all DelayBefore and DelayAfter properties with configurable parameters to calibrate the BOT in real environment without making any changes in the code. Please update all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is Accuracy property of activity parameterized?",
+        "RuleCategory": "CONFIGURABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to fill all Accuracy properties with configurable parameters to calibrate the BOT in real environment without making any changes in the code. Please update all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are log messages parameterized?",
+        "RuleCategory": "CONFIGURABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to provide configurable parameters to all log messages to accomplish the flexibility of changing the messages any time. Please update all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are Web Application Urls Parameterized?",
+        "RuleCategory": "CONFIGURABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No Acitvity with URL values is defined and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to not hard code any URLs inside the code. All such cases need to be referring configurable parameters. Please update all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is Duration property of Delay activity parameterized?",
+        "RuleCategory": "CONFIGURABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to fill Duration property of all Delay activities with configurable parameters to calibrate the BOT in real environment without making any changes in the code. Please update all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are Email ids parameterized?",
+        "RuleCategory": "CONFIGURABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No Acitivity is defined with Input methods and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to not hard code any email ids inside the code. All such cases need to be referring configurable parameters. Please update all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are Selectors dynamic?",
+        "RuleCategory": "RELIABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No Selector is defined and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to make the selectors dynamic wherever possible. Please update all non-compliant cases. Additionally, Please review the list of all the selectors raw data for qualitative assessment.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is IDX property avoided in selectors?",
+        "RuleCategory": "RELIABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to avoid IDX property in the selectors. Please re-visit all such cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is usage of WaitForReady mode reliable for web applications?",
+        "RuleCategory": "RELIABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No Acitivity with WaitForReady property is defined and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to use INTERACTIVE or COMPLETE mode for WaitForReady as it eliminates cases of slow application load time.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is complete code covered under try catch block to handle unknown exception?",
+        "RuleCategory": "RELIABILITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "No Acitvity/Try Catch block is defined and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to have complete code covered under try-catch block. Please update all such non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are Terminate Workflow Activity avoided in the Workflow?",
+        "RuleCategory": "RELIABILITY",
+        "Score": "10.0",
+        "Severity": "NA",
+        "ObservationMessages": "No Acitivity is defined with Input methods and thus this rule is not applicable.",
+        "Suggestion": "Typically, it is suggested to avoid TerminateWorkflow activity and instead implement the logic of ShouldStop based on the transaction. Please revisit the code and see if this can be avoided.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is browser closed or instance passed as out argument in the workflow?",
+        "RuleCategory": "RELIABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No Acitivity is defined with Input methods and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to close the browser explicitly inside the complete workflow. For individual workflow, if it is not closed there then instance should be passed as out argument to get that closed in the parent workflow. Please update all such cases accordingly.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is Static delay introduced in the code?",
+        "RuleCategory": "PERFORMANCE",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "No occurrence(s) of static delay is defined and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to avoid static delays and instead use conditional delays. Please revisit all such cases and try to convert all static delays to the conditional one.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is Input mode efficiently used in the Workflow?",
+        "RuleCategory": "PERFORMANCE",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to use either simulate or sendWindowMessage input mode, with a priority being given to the simulate mode. Please revisit all default cases and assess if they can be changed to the preferred input modes.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is WaitForReady mode used, efficient enough for Web Applications?",
+        "RuleCategory": "PERFORMANCE",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "For all web interactions, it is suggested to not use None as value for WaitForReady property. Please revisit all such cases and assess if this can be changed to other values.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are multiple activities getting executed in parallel mode?",
+        "RuleCategory": "PERFORMANCE",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "No Acitivity is defined with Input methods and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to execute the similar activities in parallel mode. Please revisit all such scenarios and assess if parallel mode can be applied.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are passwords stored inside the code?",
+        "RuleCategory": "SECURITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to not hard code any kind of credentials inside the code, ex:- database, email automation, object cloning. Please updae all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is the code vulnerable towards accessing hidden urls in it?",
+        "RuleCategory": "SECURITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "There are no hardcoded URLs in the script.",
+        "Suggestion": "It is suggested to not hardcode any Urls inside the code. Unknown URLs make the BOT vulnerable towards external security threats. Please ensure to either parameterize the URLs or remove them from the code.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are User Names stored inside the code?",
+        "RuleCategory": "SECURITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to not store any user names inside the code. Please update all such non-compliant cases and use appropriate approach like assets, configuration file, etc",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is the code vulnerable towards business data getting stored in logs?",
+        "RuleCategory": "SECURITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "Typically, business data get stored in the system using additional log fields. Please revisit all such cases and evaluate them based on applicable data storage policy. In general, transaction ids are fine to be stored from traceability perspective.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is the code vulnerable towards business data getting shared through hidden email ids in it?",
+        "RuleCategory": "SECURITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to not hardcode any email id inside the code. It makes the BOT vulnerable towards sharing business data. Please ensure to either parameterize the email ids or remove them from the code.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is the code vulnerable towards executing hidden Applications or executable in it?",
+        "RuleCategory": "SECURITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to not hardcode any application executables inside the code. Unknown executables make the BOT vulnerable towards external security threats. Please ensure to either parameterize such cases or remove them from the code.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      }
+    ],
+    "OverallSeverity": ["3", "1", "0", "11", "20"],
+    "ConfigurabilitySeverity": ["0", "0", "0", "0", "8"],
+    "PerformanceSeverity": ["0", "0", "0", "2", "2"],
+    "ReadabilitySeverity": ["3", "1", "0", "7", "0"],
+    "ReliabilitySeverity": ["0", "0", "0", "1", "5"],
+    "SecuritySeverity": ["0", "0", "0", "1", "5"]
+  },
+  {
+    "DisplayName": "Process.xaml",
+    "OverallScores": ["8.5", "0", "10.0", "8.78", "5.0", "10.0"],
+    "ObservationMessages": [
+      "1 Argument (50.0%) is not used in the code",
+      "3 Activities (60.0%) are not following the defined standards for naming convention",
+      "Not all Activities are covered under Try-Catch block and thus all un-known exceptions are not handled"
+    ],
+    "ObservationSeverity": ["High", "High", "High"],
+    "WorkflowAppData": [],
+    "DetailedDashboard": [
+      {
+        "RuleName": "Is naming convention followed for Variables?",
+        "RuleCategory": "READABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to use either upper or lower camel casing to define Variables. For example, IsDataAvailable, of isDataAvailable. Please evaluate all non-compliant cases and update them accordingly. Additionally, you can also view the Variables raw data to conduct qualitative check in terms of meaningfulness.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is naming convention followed for Arguments?",
+        "RuleCategory": "READABILITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "No Arguments are defined and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to define the argument names with a prefix of in_ for input, out_ for output and io_ for input-output type followed by either upper of lower camel casing.  Please evaluate all non-compliant cases and update them accordingly. Additionally, you can also view the Arguments raw data to conduct qualitative check in terms of meaningfulness.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are all writeline activities removed from the Workflow?",
+        "RuleCategory": "READABILITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "No Writeline Activity is defined.",
+        "Suggestion": "Write line activities are used primarily for debugging purpose and thus it is suggested to remove them from the workflow.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are all message box activities removed from the Workflow?",
+        "RuleCategory": "READABILITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "No MessageBox Activity is defined.",
+        "Suggestion": "Typically, all message box activities are used primarily for debugging purpose and thus it is suggested to remove them from the workflow. If needed, use Input Dialog activity.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are all Variables used in the code?",
+        "RuleCategory": "READABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to define only those variables which get used inside the code. All unused variables should be removed from the code. Please remove all unused variables either manually or by using remove unused variable functionality of Ui Path.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are all input Arguments used in the code?",
+        "RuleCategory": "READABILITY",
+        "Score": "5.0",
+        "Severity": "High",
+        "ObservationMessages": "1 Argument (50.0%) is not used in the code",
+        "Suggestion": "It is suggested to use all input arguments inside the code. All unused arguments should be removed from the code. Please remove all unused arguments.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is naming convention followed for the Activities?",
+        "RuleCategory": "READABILITY",
+        "Score": "4.0",
+        "Severity": "High",
+        "ObservationMessages": "3 Activities (60.0%) are not following the defined standards for naming convention",
+        "Suggestion": "Ideally each and every activity should be uniquely named as display name and should not necessarily be same as that of the Activity Name. Please evaluate all non-compliant cases and update them accordingly.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is Commenting done adequately for all activities?",
+        "RuleCategory": "READABILITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "No Comment or Annotation container found and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to provide adequate comments at least for each container activity. Please provide comments against each non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are all unused activities removed from the Workflow?",
+        "RuleCategory": "READABILITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "No Activities are commented out.",
+        "Suggestion": "It is suggested to remove all comment out activities as they will not be executed and might be there for debugging purpose. Please remove all such cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is the code componentized enough to maintain?",
+        "RuleCategory": "READABILITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "Optimal number of Activities 5 used in single workflow",
+        "Suggestion": "It is suggested to use not more than 100 activities inside any workflow. Anything beyond this is the indication of poor componentization. Please re-evaluate the design from componentization perspective.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is nested IF logic avoided in the Workflow?",
+        "RuleCategory": "READABILITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "No Nested IF Statement is defined.",
+        "Suggestion": "It is suggested to avoid more that one If activities inside any If activity. This creates code complex and unreadable. Please simplify the code by eliminating nested if scenarios.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is TimeOut property parameterized?",
+        "RuleCategory": "CONFIGURABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to fill all Timeout properties with configurable parameters to calibrate the BOT in real environment without making any changes in the code. Even if it is null, the default value is applicable and thus it is always suggested to provide configurable values. Please update all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are files and folders path parameterized?",
+        "RuleCategory": "CONFIGURABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to not hard code any files and folders path inside the code. All such cases need to be referring configurable parameters. Please update all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is DelayBefore and DelayAfter properties parameterized?",
+        "RuleCategory": "CONFIGURABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to fill all DelayBefore and DelayAfter properties with configurable parameters to calibrate the BOT in real environment without making any changes in the code. Please update all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is Accuracy property of activity parameterized?",
+        "RuleCategory": "CONFIGURABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to fill all Accuracy properties with configurable parameters to calibrate the BOT in real environment without making any changes in the code. Please update all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are log messages parameterized?",
+        "RuleCategory": "CONFIGURABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to provide configurable parameters to all log messages to accomplish the flexibility of changing the messages any time. Please update all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are Web Application Urls Parameterized?",
+        "RuleCategory": "CONFIGURABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No Acitvity with URL values is defined and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to not hard code any URLs inside the code. All such cases need to be referring configurable parameters. Please update all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is Duration property of Delay activity parameterized?",
+        "RuleCategory": "CONFIGURABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to fill Duration property of all Delay activities with configurable parameters to calibrate the BOT in real environment without making any changes in the code. Please update all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are Email ids parameterized?",
+        "RuleCategory": "CONFIGURABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No Acitivity is defined with Input methods and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to not hard code any email ids inside the code. All such cases need to be referring configurable parameters. Please update all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are Selectors dynamic?",
+        "RuleCategory": "RELIABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No Selector is defined and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to make the selectors dynamic wherever possible. Please update all non-compliant cases. Additionally, Please review the list of all the selectors raw data for qualitative assessment.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is IDX property avoided in selectors?",
+        "RuleCategory": "RELIABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to avoid IDX property in the selectors. Please re-visit all such cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is usage of WaitForReady mode reliable for web applications?",
+        "RuleCategory": "RELIABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No Acitivity with WaitForReady property is defined and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to use INTERACTIVE or COMPLETE mode for WaitForReady as it eliminates cases of slow application load time.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is complete code covered under try catch block to handle unknown exception?",
+        "RuleCategory": "RELIABILITY",
+        "Score": "0",
+        "Severity": "High",
+        "ObservationMessages": "Not all Activities are covered under Try-Catch block and thus all un-known exceptions are not handled",
+        "Suggestion": "It is suggested to have complete code covered under try-catch block. Please update all such non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are Terminate Workflow Activity avoided in the Workflow?",
+        "RuleCategory": "RELIABILITY",
+        "Score": "10.0",
+        "Severity": "NA",
+        "ObservationMessages": "No Acitivity is defined with Input methods and thus this rule is not applicable.",
+        "Suggestion": "Typically, it is suggested to avoid TerminateWorkflow activity and instead implement the logic of ShouldStop based on the transaction. Please revisit the code and see if this can be avoided.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is browser closed or instance passed as out argument in the workflow?",
+        "RuleCategory": "RELIABILITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No Acitivity is defined with Input methods and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to close the browser explicitly inside the complete workflow. For individual workflow, if it is not closed there then instance should be passed as out argument to get that closed in the parent workflow. Please update all such cases accordingly.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is Static delay introduced in the code?",
+        "RuleCategory": "PERFORMANCE",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "No occurrence(s) of static delay is defined and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to avoid static delays and instead use conditional delays. Please revisit all such cases and try to convert all static delays to the conditional one.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is Input mode efficiently used in the Workflow?",
+        "RuleCategory": "PERFORMANCE",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to use either simulate or sendWindowMessage input mode, with a priority being given to the simulate mode. Please revisit all default cases and assess if they can be changed to the preferred input modes.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is WaitForReady mode used, efficient enough for Web Applications?",
+        "RuleCategory": "PERFORMANCE",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "For all web interactions, it is suggested to not use None as value for WaitForReady property. Please revisit all such cases and assess if this can be changed to other values.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are multiple activities getting executed in parallel mode?",
+        "RuleCategory": "PERFORMANCE",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "No Acitivity is defined with Input methods and thus this rule is not applicable.",
+        "Suggestion": "It is suggested to execute the similar activities in parallel mode. Please revisit all such scenarios and assess if parallel mode can be applied.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are passwords stored inside the code?",
+        "RuleCategory": "SECURITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to not hard code any kind of credentials inside the code, ex:- database, email automation, object cloning. Please updae all non-compliant cases.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is the code vulnerable towards accessing hidden urls in it?",
+        "RuleCategory": "SECURITY",
+        "Score": "10.0",
+        "Severity": "Compliant",
+        "ObservationMessages": "There are no hardcoded URLs in the script.",
+        "Suggestion": "It is suggested to not hardcode any Urls inside the code. Unknown URLs make the BOT vulnerable towards external security threats. Please ensure to either parameterize the URLs or remove them from the code.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Are User Names stored inside the code?",
+        "RuleCategory": "SECURITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to not store any user names inside the code. Please update all such non-compliant cases and use appropriate approach like assets, configuration file, etc",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is the code vulnerable towards business data getting stored in logs?",
+        "RuleCategory": "SECURITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "Typically, business data get stored in the system using additional log fields. Please revisit all such cases and evaluate them based on applicable data storage policy. In general, transaction ids are fine to be stored from traceability perspective.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is the code vulnerable towards business data getting shared through hidden email ids in it?",
+        "RuleCategory": "SECURITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to not hardcode any email id inside the code. It makes the BOT vulnerable towards sharing business data. Please ensure to either parameterize the email ids or remove them from the code.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      },
+      {
+        "RuleName": "Is the code vulnerable towards executing hidden Applications or executable in it?",
+        "RuleCategory": "SECURITY",
+        "Score": "NA",
+        "Severity": "NA",
+        "ObservationMessages": "No data is defined in the given input file, therefore this rule is not applicable",
+        "Suggestion": "It is suggested to not hardcode any application executables inside the code. Unknown executables make the BOT vulnerable towards external security threats. Please ensure to either parameterize such cases or remove them from the code.",
+        "DropdownHeader": [],
+        "DropdownData": []
+      }
+    ],
+    "OverallSeverity": ["3", "0", "0", "10", "22"],
+    "ConfigurabilitySeverity": ["0", "0", "0", "0", "8"],
+    "PerformanceSeverity": ["0", "0", "0", "2", "2"],
+    "ReadabilitySeverity": ["2", "0", "0", "7", "2"],
+    "ReliabilitySeverity": ["1", "0", "0", "0", "5"],
+    "SecuritySeverity": ["0", "0", "0", "1", "5"]
+  }
+]

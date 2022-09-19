@@ -1,0 +1,57 @@
+.footer {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0);
+  margin-top: auto;
+  text-align: center;
+  padding: 10px 0px;
+  flex-shrink: 0;
+  color: "#000";
+  background-color: #fff;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.read-me-step-css {
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.read-me-step-css {
+  cursor: pointer;
+}
+
+.read-me-step-css:hover {
+  color: #000;
+}
+
+.read-me-step-subtext-css {
+  font-size: 12px;
+  padding-left: 19px;
+  color: rgb(233, 230, 230);
+}
+
+.read-me-modal-css {
+  background-color: #fff;
+  border-radius: 7px;
+  border: none;
+  color: #fff;
+}
+
+.read-me-button-css {
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 9px 20px 9px 20px;
+  float: right;
+  margin-left: 20px;
+  background-color: #24b3c3;
+}
+
+.read-me-button-css:hover {
+  background: #fff;
+  color: #24b3c3;
+  border: 1px solid #000;
+}

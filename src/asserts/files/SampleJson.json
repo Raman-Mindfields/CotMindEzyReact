@@ -1,0 +1,106 @@
+[
+  {
+    "Status": true,
+    "DisplayName": "Summary",
+    "ProjectName": " UiPath-Test20Oct-ID343",
+    "Tool": "UiPath",
+    "DevName": "Raman",
+    "Project Phase": "Testing",
+    "ExcelOutputReport": "R:\\Mindfields-Inhouse\\FlaskAPI\\CRT-Desktop-App\\CRT-FrontendUpdates\\CRT-UiPath-12thOctober\\Output-UI\\ProjectOutput-UiPath-Test20Oct-ID343.xlsx",
+    "OverallScores": [8.33, 0, 10, 7.14, 10, 10],
+    "OverallSeverity": [8, 0, 0, 36, 96],
+    "ReadabilitySeverity": ["8", "0", "0", "20", "16"],
+    "ConfigurabilitySeverity": ["0", "0", "0", "0", "32"],
+    "PerformanceSeverity": ["0", "0", "0", "8", "8"],
+    "ReliabilitySeverity": ["0", "0", "0", "4", "20"],
+    "SecuritySeverity": ["0", "0", "0", "4", "20"],
+    "InteractionFlow": {
+      "Attachment.xaml": ["Delivery.xaml", "Practice.xaml", "Program.xaml"],
+      "Delivery.xaml": ["Subprogram_D.xaml", "Subprogram2_D.xaml"],
+      "Practice.xaml": ["SubPractice.xaml"],
+      "Program.xaml": ["Sub1.xaml", "Sub2.xaml", "Sub3.xaml"]
+    },
+    "ObservationMessages": [
+      "4 Activities (100.0%) are not following the defined standards for naming convention",
+      "Required Comment or Annotation is not provided for 1 container activity 100.0%"
+    ],
+    "ObservationSeverity": ["High", "High"],
+    "ApplicationList": { "Summary": [] },
+    "LicenseExpiry": "6",
+    "fileInteractionDataSummary":[
+      ["Main", "Process"],
+      ["Main", "Components"],
+      ["Main", "Utilities"],
+      ["Process", "Process1"],
+      ["Process", "Process2"],
+      ["Utilities", "Utility1"],
+      ["Utilities", "Utility2"],
+      ["Utilities", "Utility3"],
+      ["Utilities", "Process1"]
+    ]
+  },
+  {
+    "DisplayName": "Attachment.xaml",
+    "OverallScores": ["8.33", "0", "10.0", "7.14", "10.0", "10.0"],
+    "ObservationMessages": [
+      "4 Activities (100.0%) are not following the defined standards for naming convention",
+      "Required Comment or Annotation is not provided for 1 container activity 100.0%"
+    ],
+    "ObservationSeverity": ["High", "High"],
+    "WorkflowAppData": [],
+    "OverallSeverity": ["2", "0", "0", "9", "24"],
+    "ConfigurabilitySeverity": ["0", "0", "0", "0", "8"],
+    "PerformanceSeverity": ["0", "0", "0", "2", "2"],
+    "ReadabilitySeverity": ["2", "0", "0", "5", "4"],
+    "ReliabilitySeverity": ["0", "0", "0", "1", "5"],
+    "SecuritySeverity": ["0", "0", "0", "1", "5"]
+  },
+  {
+    "DisplayName": "Delivery.xaml",
+    "OverallScores": ["8.33", "0", "10.0", "7.14", "10.0", "10.0"],
+    "ObservationMessages": [
+      "3 Activities (100.0%) are not following the defined standards for naming convention",
+      "Required Comment or Annotation is not provided for 1 container activity 100.0%"
+    ],
+    "ObservationSeverity": ["High", "High"],
+    "WorkflowAppData": [],
+    "OverallSeverity": ["2", "0", "0", "9", "24"],
+    "ConfigurabilitySeverity": ["0", "0", "0", "0", "8"],
+    "PerformanceSeverity": ["0", "0", "0", "2", "2"],
+    "ReadabilitySeverity": ["2", "0", "0", "5", "4"],
+    "ReliabilitySeverity": ["0", "0", "0", "1", "5"],
+    "SecuritySeverity": ["0", "0", "0", "1", "5"]
+  },
+  {
+    "DisplayName": "Practice.xaml",
+    "OverallScores": ["8.33", "0", "10.0", "7.14", "10.0", "10.0"],
+    "ObservationMessages": [
+      "2 Activities (100.0%) are not following the defined standards for naming convention",
+      "Required Comment or Annotation is not provided for 1 container activity 100.0%"
+    ],
+    "ObservationSeverity": ["High", "High"],
+    "WorkflowAppData": [],
+    "OverallSeverity": ["2", "0", "0", "9", "24"],
+    "ConfigurabilitySeverity": ["0", "0", "0", "0", "8"],
+    "PerformanceSeverity": ["0", "0", "0", "2", "2"],
+    "ReadabilitySeverity": ["2", "0", "0", "5", "4"],
+    "ReliabilitySeverity": ["0", "0", "0", "1", "5"],
+    "SecuritySeverity": ["0", "0", "0", "1", "5"]
+  },
+  {
+    "DisplayName": "Program.xaml",
+    "OverallScores": ["8.33", "0", "10.0", "7.14", "10.0", "10.0"],
+    "ObservationMessages": [
+      "4 Activities (100.0%) are not following the defined standards for naming convention",
+      "Required Comment or Annotation is not provided for 1 container activity 100.0%"
+    ],
+    "ObservationSeverity": ["High", "High"],
+    "WorkflowAppData": [],
+    "OverallSeverity": ["2", "0", "0", "9", "24"],
+    "ConfigurabilitySeverity": ["0", "0", "0", "0", "8"],
+    "PerformanceSeverity": ["0", "0", "0", "2", "2"],
+    "ReadabilitySeverity": ["2", "0", "0", "5", "4"],
+    "ReliabilitySeverity": ["0", "0", "0", "1", "5"],
+    "SecuritySeverity": ["0", "0", "0", "1", "5"]
+  }
+]

@@ -7,7 +7,7 @@ const RemoveCredentials = () => {
 };
 
 const instance = axios.create({
-  baseURL: "https://a5c3-2405-201-5509-4a9b-44a1-6c94-53e0-ac93.ngrok.io/",
+  baseURL: "http://ec2-13-235-51-151.ap-south-1.compute.amazonaws.com/",
   headers: {
     "Content-Type": "multipart/form-data",
   },

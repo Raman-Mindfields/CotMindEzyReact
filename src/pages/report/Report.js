@@ -1108,7 +1108,7 @@ const Report = (props) => {
             </Typography>
             <Box component={'span'} sx={{borderRight: "1px solid #cccccc", mr: 3}} />
             <Typography variant="subtitle1" component={'span'} mr={3} textAlign="center" fontWeight={'500'}>
-              <Tooltip title={'Rules Run'}><RunRulesIcon sx={{color: "#047d91", fontSize: "28px"}} /></Tooltip> {props.activeRuleForReportPage || 58} out of 58 Rules Run
+              <Tooltip title={'Rules Run'}><RunRulesIcon sx={{color: "#047d91", fontSize: "28px"}} /></Tooltip> {props.activeRuleForReportPage || 58} out of 71 Rules Run
             </Typography>
             {/* <Typography 
               variant="subtitle1"

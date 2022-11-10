@@ -39,7 +39,7 @@
     "Medium": "5.1-8.0",
     "Low": "8.1-9.9",
     "Compliant": "10.0-10.0",
-    "Suggestion": "Write line activities are used primarily for debugging purpose and thus it is suggested to remove them from the workflow."
+    "Suggestion": "It is suggested to remove writeline activity from the workflow as they are used primarily for debugging purpose."
   },
   {
     "Status": "Active",
@@ -165,7 +165,7 @@
     "Medium": "",
     "Low": "",
     "Compliant": "10.0-10.0",
-    "Suggestion": "Variable names should have unique names if they are in different scopes, but the same workflow file."
+    "Suggestion": "It is suggested that variable names should have unique names if they are in different scopes, but the same workflow file."
   },
   {
     "Status": "Active",
@@ -179,7 +179,7 @@
     "Medium": "",
     "Low": "",
     "Compliant": "10.0-10.0",
-    "Suggestion": "Variable names should have unique names if they are in different scopes, but the same workflow file."
+    "Suggestion": "It is suggested that variable names should not be same as the argument names."
   },
   {
     "Status": "Active",
@@ -207,7 +207,7 @@
     "Medium": "",
     "Low": "",
     "Compliant": "10.0-10.0",
-    "Suggestion": "Make sure the names of existing DataTable arguments start with the argument type and include the dt_ prefix."
+    "Suggestion": "It is suggested to make sure the names of existing DataTable arguments start with the argument type and include the 'dt_' prefix."
   },
   {
     "Status": "Active",
@@ -459,7 +459,7 @@
     "Medium": "",
     "Low": "",
     "Compliant": "10.0-10.0",
-    "Suggestion": "The Workflow should contain a limited number of Arguments."
+    "Suggestion": "It is suggested that the Workflow should contain a limited number of Arguments."
   },
   {
     "Status": "Active",
@@ -669,7 +669,7 @@
     "Medium": "",
     "Low": "",
     "Compliant": "10.0-10.0",
-    "Suggestion": "Remove empty sequences because they can clutter the workflow."
+    "Suggestion": "It is suggested to remove empty sequences because they can clutter the workflow."
   },
   {
     "Status": "Active",
@@ -823,7 +823,7 @@
     "Medium": "",
     "Low": "",
     "Compliant": "10.0-10.0",
-    "Suggestion": "It is suggested to use BU_ as prefix and _Dispatcher/Performer as suffix to the process name. For example, BU_SendRequests_Dispatcher, BU_GetRequests_Performer. Please evaluate all non-compliant cases and update them accordingly."
+    "Suggestion": "It is suggested to use BU_ as prefix and _Dispatcher/Performer as suffix to the process name. For example, FIN_SendRequests_Dispatcher, LGL_GetRequests_Performer. Please evaluate all non-compliant cases and update them accordingly."
   },
   {
     "Status": "Active",
@@ -914,20 +914,6 @@
     "Rule_Id": "UI_R066",
     "CodeCtgy": "AllApplications",
     "FunctionName": "CheckAllApplicationUi",
-    "RuleCtgy": "Auditability",
-    "RuleSubCtgy": "Data Sharing",
-    "RuleDesc": "Queues Conventions",
-    "High": "0.0-0.0",
-    "Medium": "",
-    "Low": "",
-    "Compliant": "10.0-10.0",
-    "Suggestion": "It is suggested that each process needs to have at least one queue. Each queue item should have AHT associated with it to track benefits. Please evaluate all non-compliant cases and update them accordingly."
-  },
-  {
-    "Status": "Active",
-    "Rule_Id": "UI_R067",
-    "CodeCtgy": "AllApplications",
-    "FunctionName": "CheckAllApplicationUi",
     "RuleCtgy": "Standardised",
     "RuleSubCtgy": "Data Sharing",
     "RuleDesc": "Repeatable Code Convention",
@@ -939,7 +925,7 @@
   },
   {
     "Status": "Active",
-    "Rule_Id": "UI_R068",
+    "Rule_Id": "UI_R067",
     "CodeCtgy": "AllApplications",
     "FunctionName": "CheckAllApplicationUi",
     "RuleCtgy": "Reliability",
@@ -953,7 +939,7 @@
   },
   {
     "Status": "Active",
-    "Rule_Id": "UI_R069",
+    "Rule_Id": "UI_R068",
     "CodeCtgy": "AllApplications",
     "FunctionName": "CheckAllApplicationUi",
     "RuleCtgy": "Reliability",
@@ -967,7 +953,7 @@
   },
   {
     "Status": "Active",
-    "Rule_Id": "UI_R070",
+    "Rule_Id": "UI_R069",
     "CodeCtgy": "AllApplications",
     "FunctionName": "CheckAllApplicationUi",
     "RuleCtgy": "Reliability",
@@ -981,7 +967,7 @@
   },
   {
     "Status": "Active",
-    "Rule_Id": "UI_R071",
+    "Rule_Id": "UI_R070",
     "CodeCtgy": "AllApplications",
     "FunctionName": "CheckAllApplicationUi",
     "RuleCtgy": "Reliability",

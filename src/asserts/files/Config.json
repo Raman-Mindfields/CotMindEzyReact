@@ -11,7 +11,7 @@
     "Medium": "5.1-8.0",
     "Low": "8.1-9.9",
     "Compliant": "10.0-10.0",
-    "Suggestion": "It is suggested to use the DataType of the variable followed by Pascal case format for the variable name. For example, bool_IsDataAvailable,  int_Counter, str_TransactionCode. Please evaluate all non-compliant cases and update them accordingly. Additionally, you can also view the Variables raw data to conduct qualitative check in terms of meaningfulness."
+    "Suggestion": "It is suggested to use the DataType of the variable followed by Pascal case format for the variable name with not more than 1 underscore. For example, bool_IsDataAvailable,  int_Counter, str_TransactionCode. Please evaluate all non-compliant cases and update them accordingly. Additionally, you can also view the Variables raw data to conduct qualitative check in terms of meaningfulness."
   },
   {
     "Status": "Active",

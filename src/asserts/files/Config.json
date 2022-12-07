@@ -427,9 +427,9 @@
     "RuleCtgy": "RELIABILITY",
     "RuleSubCtgy": "Data Sharing",
     "RuleDesc": "Argument Default Values",
-    "High": "0.0-0.0",
+    "High": "",
     "Medium": "",
-    "Low": "",
+    "Low": "0.0-0.0",
     "Compliant": "10.0-10.0",
     "Suggestion": "It is suggested to make use of default values for arguments be used either for testing individual workflow files or for a default configuration in the case of reusable components."
   },
@@ -980,4 +980,3 @@
     "Suggestion": "It is suggested that all log messages in custom units must begin with '==<Unit Name>=='. There must be at least one log placed at the start of the unit and the end of the unit (e.g. '==<Unit Name>==Started' and '==<Unit Name>==Completed')."
   }
 ]
-
